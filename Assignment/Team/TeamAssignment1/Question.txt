@@ -1,0 +1,65 @@
+INSTRUCTION PAGE
+Silahkan mengerjakan tugas berikut ini.
+
+Instruksi Pengerjaan
+
+1.       Buat program menggunakan Java dengan nama file PlaylistOOP.java.
+
+2.       Gunakan array untuk menyimpan kumpulan objek Lagu.
+
+3.       Gunakan konsep OOP secara lengkap:
+
+o   Enkapsulasi → atribut dibuat private, diakses melalui getter dan setter.
+
+o   Inheritance → class Admin dan class Member mewarisi class User.
+
+o   Polymorphism → method tampilkanAkses() diimplementasikan berbeda di setiap class turunan.
+
+4.       Setiap kelompok harus menuliskan komentar di setiap fungsi utama untuk menjelaskan logikanya.
+
+5.       Sertakan identitas kelompok (nama dan NIM) di bagian atas program.
+
+6.       Kumpulkan:
+
+o   File .java
+
+o   Screenshot hasil eksekusi
+
+o   Link GitHub/Replit/video demo
+
+o   Pastikan jawaban ada di LMS
+
+ 
+
+Deskripsi Tugas
+
+Kelompok diminta untuk membuat sistem manajemen playlist musik sederhana.
+Dalam sistem ini, terdapat dua peran utama:
+
+Admin Playlist, bertugas untuk menambahkan lagu ke dalam sistem dan melihat daftar lagu yang tersimpan.
+Pengguna Playlist, dapat menelusuri lagu yang ada, melihat detail lagu tertentu, serta menghitung rata-rata durasi lagu dalam playlist.
+Sistem ini harus dapat mengelola data lagu menggunakan konsep Object-Oriented Programming (OOP) dan memanfaatkan array untuk menyimpan kumpulan lagu.
+ 
+
+Tugas ini bertujuan agar mahasiswa memahami hubungan antara struktur data (array) dan representasi objek dalam OOP, sebagai fondasi awal untuk analisis algoritma di tugas kelompok 2.
+
+
+Implementasikan sistem manajemen playlist musik ini menggunakan Java dengan menerapkan konsep Object-Oriented Programming (OOP) seperti enkapsulasi, inheritance, dan polymorphism, serta menggunakan array untuk menyimpan kumpulan objek lagu.
+
+Struktur Program yang Diharapkan
+
+1. Terdapat Class Lagu untuk merepresentasikan setiap lagu dengan atribut (30%)
+
+String judul
+String artis
+double durasi
+Sertakan constructor, getter/setter, dan method tampilkanInfo() yang menampilkan informasi lengkap lagu.
+
+
+2. Buatlah class User sebagai parent class, dengan class Admin dan class Member sebagai child class. (45%) 
+
+Class Admin dapat menambahkan lagu baru ke playlist. 
+
+Class Member dapat melihat daftar lagu dan mencari lagu berdasarkan judul. 
+
+3. Jelaskan dalam laporan bagaimana konsep inheritance dan polymorphism digunakan dalam sistem ini. (25%) 

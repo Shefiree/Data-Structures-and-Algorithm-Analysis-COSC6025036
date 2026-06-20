@@ -1,0 +1,87 @@
+Arrays
+Sebuah array akan menyimpan beberapa item data yang memiliki tipe data sama didalam sebuah blok memori yang berdekatan.
+
+Silakan teman-teman pelajari di materi LN atau dari source lainnya.
+
+Setelah mempelajarinya silakan teman-teman Latihan :
+
+1.     Array 1 Dimensi
+
+Buatlah sebuah String array yang akan menginisialisasi 7 hari dalam seminggu. Sebagai contoh,
+
+String days[] = {“Monday”, “Tuesday”….};
+
+Kemudian print semua nilai dari array (silakan gunakan juga untuk do-while dan for-loop)
+
+ 
+
+Code:
+
+String[] days = {"Sunday","Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"};
+for (int k=0; k < days.length ;k++) {
+    System.out.println(days[k]);
+}
+
+ 
+
+Or
+
+String[] days = {"Sunday","Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"};
+
+int m = 0;
+do {
+    System.out.println(days[m]);
+    m++;
+} while(m<8);
+
+ 
+
+ 
+
+2.     Array Multidimensi
+
+Berikut ini adalah array multidimensi yang menyatakan isi dari sebuah buku alamat:
+
+String entry = {{"Florence", "735-1234", "Manila"},
+
+{"Joyce", "983-3333", "Quezon City"},
+
+{"Becca", "456-3322", "Manila"}};
+
+Cetak buku alamat tersebut dalam format berikut ini:
+
+Name : Florence
+
+Tel. # : 735-1234
+
+Address : Manila
+
+Name : Joyce
+
+Tel. # : 983-3333
+
+Address : Quezon City
+
+Name : Becca
+
+Tel. # : 456-3322
+
+Address : Manila
+
+ 
+
+Code:
+
+ 
+
+String[][] address = {{"Florence", "735-1234", "Manila"}, {"Joyce", "983-3333", "Quezon City"}, {"Becca", "456-3322", "Manila"}};
+System.out.println("Buku Alamat saya");
+for (int n = 0; n < address.length ; n++) {
+    /*for (int m = 0; address[n].length; m++) {
+        System.out.println(address[n][m]+"");
+    }*/
+    System.out.println("Name: " + address[n][0]);
+    System.out.println("Tel.#: " + address[n][1]);
+    System.out.println("Address: " + address[n][2]);
+    System.out.println();
+}
