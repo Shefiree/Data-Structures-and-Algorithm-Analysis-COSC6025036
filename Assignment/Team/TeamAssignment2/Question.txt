@@ -1,0 +1,90 @@
+INSTRUCTION PAGE
+Silahkan mengerjakan soal tugas berikut ini.
+
+Instruksi Pengerjaan
+
+1.       Buat program menggunakan Java dengan nama file PlaylistArray.java.
+
+2.       Gunakan array untuk menyimpan kumpulan objek Lagu (maksimal 10 lagu).
+
+3.       Implementasikan empat operasi dasar array:
+
+·      Traversal (penelusuran)
+
+·      Searching (pencarian)
+
+·      Insertion (penyisipan)
+
+·      Deletion (penghapusan)
+
+4.       Tambahkan menu interaktif berbasis konsol agar pengguna dapat memilih operasi yang ingin dijalankan.
+
+5.       Gunakan komentar kode untuk menjelaskan logika setiap operasi.
+
+6.       Sertakan identitas kelompok di bagian atas file (nama, NIM, kelas).
+
+7.       Kumpulkan hasil dalam bentuk:
+
+·      File .java
+
+·      Screenshot hasil eksekusi setiap operasi
+
+·      Link GitHub/Replit/video demo
+
+·      Pastikan semua berkas diunggah ke LMS.
+
+ ===
+ 1. Implementasikan Operasi Array (Traversal, Searching, Insertion, Deletion) (Bobot 40%)
+
+a. Buat menu interaktif berikut:
+
+=== MENU PLAYLIST MUSIK === 1. Tampilkan semua lagu 2. Tambah lagu baru 3. Hapus lagu berdasarkan judul 4. Cari lagu berdasarkan judul 5. Keluar
+
+b. Gunakan array statis dengan ukuran maksimum 10.
+
+c. Saat menambah lagu, pastikan program memeriksa apakah playlist sudah penuh.
+
+d. Saat menghapus lagu, geser elemen array agar data tetap rapat.
+
+e. Operasi pencarian menggunakan metode linear search.
+
+
+2. Analisis Kompleksitas Operasi (Bobot 30%)
+
+Jelaskan dalam laporan hasil analisis kompleksitas waktu (Big O Notation) untuk setiap operasi:
+
+Operasi Kompleksitas Penjelasan
+
+Traversal
+
+Searching
+
+Insertion
+
+Deletion
+
+
+
+
+
+
+
+3. Fitur Tambahan (Sorting Berdasarkan Durasi) (Bobot 20%)
+
+a. Tambahkan fitur tambahan untuk mengurutkan lagu berdasarkan durasi (ascending) menggunakan:
+
+· Bubble Sort atau
+
+· Selection Sort
+
+b. Tampilkan hasil sebelum dan sesudah pengurutan.
+
+c. Sertakan penjelasan singkat di laporan mengapa algoritma tersebut termasuk dalam kategori O(n²).
+
+4. Kerapian Program dan Dokumentasi (Bobot 10%)
+
+a. Kode tersusun rapi, menggunakan indentasi yang konsisten.
+
+b. Setiap fungsi utama memiliki komentar.
+
+c. Output program tampil jelas dan mudah dibaca.
