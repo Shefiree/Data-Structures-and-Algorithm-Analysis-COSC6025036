@@ -1,0 +1,42 @@
+LinkedListInsertionSingly Linked List and Inserting in Linked List
+Singly Linked List
+
+Singly Linked List adalah Linked List yang hanya memiliki pointer ke node berikutnya, dan traversal hanya bisa dilakukan dari awal hingga akhir. Setiap node terdiri dari:
+
+Data: Nilai atau informasi yang disimpan.
+Next: Pointer ke node berikutnya dalam daftar.
+Berikut link yang teman-teman dapat baca juga:
+
+https://www.geeksforgeeks.org/singly-linked-list-definition-meaning-dsa/
+
+ 
+
+ 
+
+Insertion in Linked List
+
+Insertion atau penyisipan pada Linked List berarti menambahkan node baru pada posisi tertentu. Terdapat beberapa posisi atau Lokasi insertion pada single linked list, yaitu
+
+1.      Inserting an Element at the Head (Menambahkan Elemen di Kepala)
+
+https://www.geeksforgeeks.org/insert-a-node-at-front-beginning-of-a-linked-list/
+
+ 
+
+2.      Inserting an Element at the Tail (Menambahkan Elemen di Ekor)
+
+https://www.geeksforgeeks.org/insert-node-at-the-end-of-a-linked-list/
+
+ 
+
+3.      Inserting an Element at the middle of the linked list
+
+https://www.geeksforgeeks.org/insert-a-node-in-linked-list-before-a-given-node/
+
+https://www.geeksforgeeks.org/insert-a-node-after-a-given-node-in-linked-list/
+
+https://www.geeksforgeeks.org/insert-a-node-at-a-specific-position-in-a-linked-list/
+
+ 
+
+Setelah mempelajarinya dari materi LN, PPT, dan link diatas, silakan teman-teman berlatih insertion pada singly linked list, silakan tampilkan hasilnya disini.
