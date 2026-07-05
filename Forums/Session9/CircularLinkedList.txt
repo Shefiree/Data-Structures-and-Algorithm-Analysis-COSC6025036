@@ -1,0 +1,12 @@
+Circular linked list merupakan salah satu tipe spesial linked list dimana semua node dihubungkan untuk membentuk lingkaran. Tidak seperti linked list biasa, dimana node akhir mengarah ke NULL, sedangkan node terakhir dari circular linked list mengarah kembali ke node pertama (*head node). Hal ini berarti kita dapat melintasi semua list tanpa pernah mencapai value NULL.
+
+ 
+
+Silakan teman-teman membaca link berikut:
+
+https://www.geeksforgeeks.org/circular-linked-list/
+
+ 
+
+Setelah mempelajari dari materi LN, PPT, dan link diatas, silakan teman-teman berlatih circular linked list, silakan tampilkan hasilnya disini.
+

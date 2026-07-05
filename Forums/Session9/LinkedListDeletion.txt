@@ -1,0 +1,23 @@
+Deletion in Linked List
+Menghapus node pada Linked List merupakan operasi penting dan dapat dilakukan dengan tiga cara, yaitu:
+
+1.      removing the first node
+
+https://www.geeksforgeeks.org/remove-first-node-of-the-linked-list/
+
+ 
+
+2.      removing a node in the middle
+
+https://www.geeksforgeeks.org/delete-a-linked-list-node-at-a-given-position/
+
+ 
+
+3.      removing the last node.
+
+https://www.geeksforgeeks.org/remove-last-node-of-the-linked-list/
+
+ 
+
+Setelah mempelajari dari materi LN, PPT, dan link diatas, silakan teman-teman berlatih deletion pada singly linked list, silakan tampilkan hasilnya disini.
+

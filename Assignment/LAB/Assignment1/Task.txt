@@ -1,0 +1,97 @@
+Deskripsi Tugas
+
+Dalam tugas ini, Anda diminta untuk mengimplementasikan berbagai operasi pada Array dan ArrayList serta melakukan analisis perbandingan antara kedua struktur data tersebut dalam konteks efisiensi penggunaan memori dan kecepatan akses data.
+
+Anda akan mengembangkan program Java yang mencakup:
+
+Operasi dasar pada Array: Traversal, pencarian, penyisipan, dan penghapusan.
+Operasi dasar pada ArrayList: Menambahkan elemen, menghapus elemen, pencarian, dan pengurutan.
+Perbandingan kinerja antara Array dan ArrayList berdasarkan waktu eksekusi operasi yang dilakukan.
+ 
+
+1. Instruksi Pengerjaan
+
+Buat kelas ArrayOperations yang memiliki metode untuk melakukan:
+Traversal (menampilkan isi array)
+Pencarian nilai dalam array (linear search dan binary search)
+Penyisipan nilai ke dalam array
+Penghapusan nilai dari array
+ 
+
+Buat kelas ArrayListOperations yang memiliki metode untuk:
+Menambahkan elemen ke dalam ArrayList
+Menghapus elemen dari ArrayList
+Melakukan pencarian elemen dalam ArrayList
+Mengurutkan elemen dalam ArrayList
+ 
+
+Buat kelas Comparison yang membandingkan kinerja Array dan ArrayList dengan mengukur waktu eksekusi operasi dasar yang telah diimplementasikan.
+ 
+
+Jalankan program dengan serangkaian data uji dan tampilkan hasil perbandingan dalam bentuk tabel.
+ 
+
+ 
+
+ 
+
+2. Output yang Diharapkan
+
+Setelah menyelesaikan tugas ini, Anda harus memiliki program yang dapat:
+Melakukan operasi traversal, pencarian, penyisipan, dan penghapusan pada Array dan ArrayList.
+Menampilkan hasil operasi dalam bentuk tabel atau grafik sederhana.
+Menganalisis dan membandingkan waktu eksekusi Array vs. ArrayList untuk setiap operasi dasar.
+ 
+
+Contoh Output:
+
+Array Traversal: [10, 20, 30, 40, 50]
+
+ArrayList Traversal: [10, 20, 30, 40, 50]
+
+ 
+
+Pencarian 30 dalam Array: Ditemukan di indeks 2
+
+Pencarian 30 dalam ArrayList: Ditemukan di indeks 2
+
+ 
+
+Array setelah penyisipan elemen 25: [10, 20, 25, 30, 40, 50]
+
+ArrayList setelah penyisipan elemen 25: [10, 20, 25, 30, 40, 50]
+
+ 
+
+Waktu eksekusi pencarian pada Array: 0.002 ms
+
+Waktu eksekusi pencarian pada ArrayList: 0.0015 ms
+
+ 
+
+3. Tips Pengerjaan
+
+Gunakan System.nanoTime() untuk mengukur waktu eksekusi setiap operasi.
+Gunakan System.arraycopy() untuk efisiensi penyisipan dan penghapusan elemen dalam Array.
+Gunakan Collections.sort() untuk mengurutkan ArrayList dengan mudah.
+Bandingkan hasil eksekusi dengan ukuran data yang lebih besar (misalnya 1000 elemen) untuk melihat perbedaan nyata antara Array dan ArrayList dalam pemakaian praktis.
+ 
+
+4. Pengumpulan
+
+Kumpulkan kode program Java dalam bentuk file .zip yang berisi semua class yang telah dibuat.
+Sertakan laporan singkat dalam format .pdf atau .docx yang berisi:
+Penjelasan metode yang digunakan
+Analisis hasil eksperimen
+Kesimpulan tentang kelebihan dan kekurangan Array vs. ArrayList
+ 
+
+ 
+
+ 
+
+Catatan:
+
+Pastikan kode berjalan dengan baik sebelum dikumpulkan.
+Gunakan komentar dalam kode untuk menjelaskan fungsionalitas setiap metode.
+Selamat mengerjakan! Happy Coding
