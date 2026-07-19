@@ -1,0 +1,71 @@
+package ta_4_stack;
+
+import java.util.Scanner;
+
+public class MainStack {
+    public static void main(String[] args) {
+        Scanner input = new Scanner(System.in);
+        TextEditor editor = new TextEditor();
+
+        int pilihan;
+
+        do {
+            System.out.println();
+            System.out.println("=== Fitur Undo/Redo Editor Teks ===");
+            System.out.println("1. Tambahkan Teks Baru");
+            System.out.println("2. Undo");
+            System.out.println("3. Redo");
+            System.out.println("4. Tampilkan Teks");
+            System.out.println("5. Keluar");
+            System.out.print("Pilih menu: ");
+            pilihan = input.nextInt();
+            input.nextLine(); // membersihkan enter setelah input angka
+
+            switch (pilihan) {
+                case 1:
+                    System.out.print("Masukkan teks yang ingin ditambahkan: ");
+                    String teksBaru = input.nextLine();
+
+                    long startTambah = System.nanoTime();
+                    editor.tambahTeks(teksBaru);
+                    long endTambah = System.nanoTime();
+
+                    System.out.println("Waktu eksekusi tambah teks: " + (endTambah - startTambah) + " ns");
+                    break;
+
+                case 2:
+                    long startUndo = System.nanoTime();
+                    editor.undo();
+                    long endUndo = System.nanoTime();
+
+                    editor.tampilkanTeks();
+                    System.out.println("Waktu eksekusi undo: " + (endUndo - startUndo) + " ns");
+                    break;
+
+                case 3:
+                    long startRedo = System.nanoTime();
+                    editor.redo();
+                    long endRedo = System.nanoTime();
+
+                    editor.tampilkanTeks();
+                    System.out.println("Waktu eksekusi redo: " + (endRedo - startRedo) + " ns");
+                    break;
+
+                case 4:
+                    editor.tampilkanTeks();
+                    break;
+
+                case 5:
+                    System.out.println("Program selesai.");
+                    break;
+
+                default:
+                    System.out.println("Pilihan tidak valid. Silakan pilih menu 1-5.");
+                    break;
+            }
+
+        } while (pilihan != 5);
+
+        input.close();
+    }
+}

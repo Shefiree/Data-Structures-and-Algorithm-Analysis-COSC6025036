@@ -1,0 +1,41 @@
+package ta_4_singlelinklist;
+
+public class Mahasiswa {
+    private String nim;
+    private String nama;
+    private int nilai;
+
+    // Constructor untuk mengisi data mahasiswa
+    public Mahasiswa(String nim, String nama, int nilai) {
+        this.nim = nim;
+        this.nama = nama;
+        this.nilai = nilai;
+    }
+
+    // Getter dan setter untuk NIM
+    public String getNim() {
+        return nim;
+    }
+
+    public void setNim(String nim) {
+        this.nim = nim;
+    }
+
+    // Getter dan setter untuk nama
+    public String getNama() {
+        return nama;
+    }
+
+    public void setNama(String nama) {
+        this.nama = nama;
+    }
+
+    // Getter dan setter untuk nilai
+    public int getNilai() {
+        return nilai;
+    }
+
+    public void setNilai(int nilai) {
+        this.nilai = nilai;
+    }
+}

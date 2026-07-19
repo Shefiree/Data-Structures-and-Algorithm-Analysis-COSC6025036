@@ -1,0 +1,30 @@
+package ta_4_singlelinklist;
+
+public class NodeMahasiswa {
+    private Mahasiswa data;
+    private NodeMahasiswa next;
+
+    // Constructor untuk membuat node baru
+    public NodeMahasiswa(Mahasiswa data) {
+        this.data = data;
+        this.next = null;
+    }
+
+    // Getter dan setter untuk data mahasiswa
+    public Mahasiswa getData() {
+        return data;
+    }
+
+    public void setData(Mahasiswa data) {
+        this.data = data;
+    }
+
+    // Getter dan setter untuk node berikutnya
+    public NodeMahasiswa getNext() {
+        return next;
+    }
+
+    public void setNext(NodeMahasiswa next) {
+        this.next = next;
+    }
+}

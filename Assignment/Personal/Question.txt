@@ -1,0 +1,80 @@
+Berikut adalah poin-poin detail dari tugas yang harus Anda kerjakan, dibagi berdasarkan topik dan tahapan pengerjaan agar lebih mudah diikuti:
+
+## A. Ketentuan Teknis & Panduan Umum (Untuk Semua Program)
+
+1. **Bahasa Pemrograman**: Gunakan **Java**.
+2. **Input**: Wajib menggunakan `Scanner` untuk menerima input dari pengguna.
+3. **Struktur Class**: Buat *class* `Node` terpisah dari *class* struktur datanya (LinkedList, Stack, Queue).
+4. **Komentar**: Tambahkan komentar singkat pada setiap bagian kode/fungsi yang penting.
+5. **Pengujian**: Pastikan setiap operasi dari menu diuji di fungsi `main()`.
+6. **Output**: Buat format output yang rapi, jelas, dan informatif sesuai dengan contoh di soal.
+
+---
+
+## B. Bagian 1: Linked List (Bobot 50%)
+
+### 1. Soal Review / Teori (15%)
+
+Jawablah 3 pertanyaan berikut di dalam dokumen tugas Anda:
+
+* Jelaskan konsep dasar Linked List dan perbedaannya dengan Array.
+* Sebutkan kelebihan dan kekurangan Linked List dibandingkan Array.
+* Jelaskan bagaimana proses operasi *insert* (tambah) dan *delete* (hapus) dilakukan pada Linked List.
+
+### 2. Soal Case / Praktik (35%)
+
+Buat program **Sistem Data Buku** menggunakan **Single Linked List**.
+
+* **Data Buku (Node)**: `kodeBuku`, `judul`, `penulis`.
+* **Ketentuan Menu Program**:
+1. **Tambah Buku (Push)**: Tambah data di **akhir** daftar.
+* *Validasi*: `kodeBuku` maksimal 5 karakter.
+* *Validasi*: Saat pengujian, pastikan Anda menginput minimal 5 data buku.
+
+
+2. **Hapus Buku (Pop)**: Menghapus data buku **terakhir**. Jika kosong, tampilkan pesan: *"Tidak ada data untuk dihapus."*
+3. **Cari Buku**: Cari berdasarkan `kodeBuku`. Tampilkan detail jika ketemu, atau pesan *"Buku tidak ditemukan"* jika tidak ada.
+4. **Lihat Semua Buku**: Tampilkan semua buku berurutan sesuai input, beserta **total jumlah buku** di baris paling bawah.
+5. **Keluar**.
+
+
+
+---
+
+## C. Bagian 2: Stack & Queue (Bobot 50%)
+
+### 1. Soal Review / Teori (15%)
+
+Jawablah 3 pertanyaan berikut di dalam dokumen tugas Anda:
+
+* Jelaskan perbedaan antara Stack dan Queue.
+* Sebutkan operasi-operasi utama yang ada di dalam Stack dan Queue.
+* Berikan contoh penerapan/penggunaan nyata dari struktur data Stack dan Queue.
+
+### 2. Soal Case / Praktik (35%)
+
+Buat program **Sistem Kasir Toko** yang menggabungkan **Stack** dan **Queue**.
+
+* **Struktur Class**: Harus ada class `Queue`, class `Stack`, dan class `Node`.
+* **Data Pelanggan (Node)**: `nomorAntrian`, `namaPelanggan`, `totalBelanja`.
+* **Ketentuan Menu Program**:
+1. **Tambah Antrian (Enqueue)**: Masukkan pelanggan ke Queue.
+* *Validasi*: Jumlah data maksimal $\le$ 5. (Masukkan minimal 5 pelanggan untuk pengujian).
+
+
+2. **Layani Pelanggan**: Lakukan **Dequeue** (keluarkan dari antrian kasir), lalu langsung lakukan **Push** (masukkan data tersebut ke Stack riwayat transaksi).
+3. **Tampilkan Antrian**: Menampilkan daftar pelanggan yang masih menunggu di Queue.
+4. **Lihat Riwayat Transaksi**: Menampilkan data dari Stack (harus berurutan LIFO: transaksi terbaru/terakhir kali dilayani berada di urutan paling atas).
+5. **Keluar**.
+
+
+
+---
+
+## D. Persyaratan Pengumpulan (Wajib)
+
+Setelah semua soal teori dijawab dan kode program selesai dibuat, pastikan Anda menyertakan hal-hal berikut di dalam dokumen (Word/PDF) sebelum dikumpulkan ke LMS:
+
+1. **Teks/Source Code Program**: Lampirkan kode Java Anda.
+2. **Screenshot Hasil Eksekusi**: Ambil tangkapan layar (screenshot) dari terminal/konsol yang membuktikan program berjalan tanpa *error* (tampilkan proses tambah, hapus, cari, dsb).
+3. **Link Bukti Eksekusi**: Sertakan tautan yang mengarah ke *source code* Anda (contohnya link Replit, GitHub, atau Google Drive yang diset *public*).

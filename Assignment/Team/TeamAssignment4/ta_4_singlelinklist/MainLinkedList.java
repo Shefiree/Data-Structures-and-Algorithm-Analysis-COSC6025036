@@ -1,0 +1,87 @@
+package ta_4_singlelinklist;
+
+import java.util.Scanner;
+
+public class MainLinkedList {
+    public static void main(String[] args) {
+        Scanner input = new Scanner(System.in);
+        MahasiswaLinkedList daftarMahasiswa = new MahasiswaLinkedList();
+
+        int pilihan;
+
+        do {
+            System.out.println();
+            System.out.println("=== Manajemen Data Mahasiswa dengan Linked List ===");
+            System.out.println("1. Tambah Mahasiswa Baru");
+            System.out.println("2. Hapus Mahasiswa");
+            System.out.println("3. Update Nilai Mahasiswa");
+            System.out.println("4. Tampilkan Daftar Mahasiswa");
+            System.out.println("5. Keluar");
+            System.out.print("Pilih menu: ");
+            pilihan = Integer.parseInt(input.nextLine());
+
+            switch (pilihan) {
+                case 1:
+                    System.out.print("Masukkan NIM   : ");
+                    String nim = input.nextLine();
+
+                    System.out.print("Masukkan Nama  : ");
+                    String nama = input.nextLine();
+
+                    System.out.print("Masukkan Nilai : ");
+                    int nilai = Integer.parseInt(input.nextLine());
+
+                    long startTambah = System.nanoTime();
+                    daftarMahasiswa.tambahMahasiswa(nim, nama, nilai);
+                    long endTambah = System.nanoTime();
+
+                    System.out.println("Waktu eksekusi tambah mahasiswa: " + (endTambah - startTambah) + " ns");
+                    break;
+
+                case 2:
+                    System.out.print("Masukkan NIM mahasiswa yang ingin dihapus: ");
+                    String nimHapus = input.nextLine();
+
+                    long startHapus = System.nanoTime();
+                    daftarMahasiswa.hapusMahasiswa(nimHapus);
+                    long endHapus = System.nanoTime();
+
+                    System.out.println("Waktu eksekusi hapus mahasiswa: " + (endHapus - startHapus) + " ns");
+                    break;
+
+                case 3:
+                    System.out.print("Masukkan NIM mahasiswa yang ingin diupdate: ");
+                    String nimUpdate = input.nextLine();
+
+                    System.out.print("Masukkan nilai baru: ");
+                    int nilaiBaru = Integer.parseInt(input.nextLine());
+
+                    long startUpdate = System.nanoTime();
+                    daftarMahasiswa.updateNilai(nimUpdate, nilaiBaru);
+                    long endUpdate = System.nanoTime();
+
+                    System.out.println("Waktu eksekusi update nilai: " + (endUpdate - startUpdate) + " ns");
+                    break;
+
+                case 4:
+                    long startTampil = System.nanoTime();
+                    daftarMahasiswa.tampilkanMahasiswa();
+                    long endTampil = System.nanoTime();
+
+                    System.out.println("Waktu eksekusi tampilkan mahasiswa: " + (endTampil - startTampil) + " ns");
+                    break;
+
+                case 5:
+                    System.out.println("Program selesai.");
+                    break;
+
+                default:
+                    System.out.println("Pilihan tidak valid. Silakan pilih menu 1-5.");
+                    break;
+            }
+
+        } while (pilihan != 5);
+
+        input.close();
+    }
+}

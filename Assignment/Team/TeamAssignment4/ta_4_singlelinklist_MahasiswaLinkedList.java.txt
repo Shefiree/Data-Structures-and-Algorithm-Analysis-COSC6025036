@@ -1,0 +1,104 @@
+package ta_4_singlelinklist;
+
+public class MahasiswaLinkedList {
+    private NodeMahasiswa head;
+
+    // Constructor untuk membuat linked list kosong
+    public MahasiswaLinkedList() {
+        head = null;
+    }
+
+    // Method untuk menambahkan mahasiswa baru ke akhir linked list
+    public void tambahMahasiswa(String nim, String nama, int nilai) {
+        Mahasiswa mahasiswa = new Mahasiswa(nim, nama, nilai);
+        NodeMahasiswa nodeBaru = new NodeMahasiswa(mahasiswa);
+
+        if (head == null) {
+            head = nodeBaru;
+        } else {
+            NodeMahasiswa current = head;
+
+            // Mencari node terakhir
+            while (current.getNext() != null) {
+                current = current.getNext();
+            }
+
+            current.setNext(nodeBaru);
+        }
+
+        System.out.println("Mahasiswa berhasil ditambahkan.");
+    }
+
+    // Method untuk menghapus mahasiswa berdasarkan NIM
+    public void hapusMahasiswa(String nim) {
+        if (head == null) {
+            System.out.println("Daftar mahasiswa masih kosong.");
+            return;
+        }
+
+        // Jika data yang dihapus berada di node pertama
+        if (head.getData().getNim().equals(nim)) {
+            head = head.getNext();
+            System.out.println("Mahasiswa dengan NIM " + nim + " berhasil dihapus.");
+            return;
+        }
+
+        NodeMahasiswa current = head;
+
+        // Mencari node sebelum data yang akan dihapus
+        while (current.getNext() != null) {
+            if (current.getNext().getData().getNim().equals(nim)) {
+                current.setNext(current.getNext().getNext());
+                System.out.println("Mahasiswa dengan NIM " + nim + " berhasil dihapus.");
+                return;
+            }
+
+            current = current.getNext();
+        }
+
+        System.out.println("Mahasiswa dengan NIM " + nim + " tidak ditemukan.");
+    }
+
+    // Method untuk mengupdate nilai mahasiswa berdasarkan NIM
+    public void updateNilai(String nim, int nilaiBaru) {
+        NodeMahasiswa current = head;
+
+        while (current != null) {
+            if (current.getData().getNim().equals(nim)) {
+                current.getData().setNilai(nilaiBaru);
+                System.out.println("Nilai mahasiswa dengan NIM " + nim + " berhasil diupdate.");
+                return;
+            }
+
+            current = current.getNext();
+        }
+
+        System.out.println("Mahasiswa dengan NIM " + nim + " tidak ditemukan.");
+    }
+
+    // Method untuk menampilkan seluruh daftar mahasiswa
+    public void tampilkanMahasiswa() {
+        if (head == null) {
+            System.out.println("Daftar mahasiswa kosong.");
+            return;
+        }
+
+        NodeMahasiswa current = head;
+        int nomor = 1;
+
+        System.out.println("Daftar Mahasiswa:");
+
+        while (current != null) {
+            Mahasiswa mhs = current.getData();
+
+            System.out.println(
+                nomor + ". NIM: " + mhs.getNim() +
+                ", Nama: " + mhs.getNama() +
+                ", Nilai: " + mhs.getNilai()
+            );
+
+            current = current.getNext();
+            nomor++;
+        }
+    }
+}
